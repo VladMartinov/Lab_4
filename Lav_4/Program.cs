@@ -218,14 +218,13 @@ switch (Cvest)
     case 3:
         {          
             string Line = Console.ReadLine();
-            Console.WriteLine("1-й метод:");
-            Console.WriteLine("\n2-й метод:");
+            Console.WriteLine("\n1-й метод:");
             string [] Line2 = Line.Split(' ');
             for (int i=Line2.Length-1;i>=0;i--)
             {
                 Console.Write(Line2[i]+" ");
             }
-            Console.WriteLine("\n3-й метод:");
+            Console.WriteLine("\n2-й метод:");
             StringBuilder builder = new StringBuilder(Line);
             string Line0 = builder.ToString();
             string[] Line3 = Line0.Split(' ');
@@ -580,7 +579,7 @@ switch (Cvest)
             }
             Console.Write("\nШифр Виженера : ");
 
-            string alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ0123456789 .,!?;‏؟‏‎(.―[],(){}⟨⟩)„“«»“”‘’‹›:";
+            string alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ0123456789 .,!?;‏؟‏‎(―[]){}⟨⟩„“«»“”‘’‹›:";
             string text = Line;
             string StartText = text;
             Console.WriteLine("\nВведите ключ: ");
